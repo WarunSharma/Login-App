@@ -28,8 +28,6 @@ server.use(session({
 
 server.use('/route',router)
 
-server.use(cookies())
-
 server.get('/',(req,res)=>{
     res.render('index',{title:'Login System'});
 });
